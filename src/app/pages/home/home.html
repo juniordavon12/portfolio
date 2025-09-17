@@ -1,0 +1,64 @@
+<app-navbar></app-navbar>
+<app-header></app-header>
+<app-about-me></app-about-me>
+<h1 class="text-center text-3xl font-bold mb-4 text-secondary">Compétences</h1>
+<section id="skills" class="px-4 py-8 md:px-8 lg:px-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        @for (skill of skills(); track skill.id) {
+        <app-skill-card [skill]="skill"></app-skill-card>
+        }
+    </div>
+</section>
+
+<section id="jobs" class="px-4 py-8 md:px-8 lg:px-16">
+    <h2 class="text-3xl font-bold text-center text-secondary mb-12">Mes Expérience</h2>
+
+    <div class="relative max-w-6xl mx-auto">
+        <!-- Timeline line -->
+        <div class="absolute left-4 md:left-1/2 transform md:-translate-x-0.5 w-0.5 h-full bg-primary opacity-30"></div>
+
+        @for (job of jobs(); track job.id; let i = $index) {
+        <div class="relative flex items-start mb-8 md:mb-12">
+            <!-- Timeline dot -->
+            <div
+                class="absolute left-2 md:left-1/2 transform md:-translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-md z-10 mt-2">
+            </div>
+
+            <!-- Left side: Company and Duration (hidden on mobile) -->
+            <div class="hidden md:block w-1/2 pr-50 text-right">
+                <h3 class="text-lg font-bold text-secondary mb-1">{{ job.company }}</h3>
+                <p class="text-sm text-gray-500 mb-2">{{ job.duration }}</p>
+            </div>
+
+            <!-- Right side: All content -->
+            <div class="ml-12 md:ml-0 md:w-1/2 md:pl-8">
+                <!-- Company and Duration (visible on mobile only) -->
+                <div class="md:hidden mb-3">
+                    <h3 class="text-lg font-bold text-secondary mb-1">{{ job.company }}</h3>
+                    <p class="text-sm text-gray-500 mb-2">{{ job.duration }}</p>
+                </div>
+
+                <!-- Position and Description -->
+                <h4 class="text-base font-semibold text-primary mb-3">{{ job.position }}</h4>
+                <p class="text-gray-700 text-sm leading-relaxed">{{ job.description }}</p>
+            </div>
+        </div>
+        }
+    </div>
+</section>
+
+<section id="certifications" class="px-4 py-8 md:px-8 lg:px-16">
+    <h2 class="text-3xl font-bold text-center text-secondary mb-8">Mes Certifications</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        @for (certification of certifications(); track certification.id) {
+        <app-certification-card [certification]="certification"></app-certification-card>
+        }
+    </div>
+</section>
+
+<section id="gallery" class="px-4 py-8 md:px-8 lg:px-16">
+    <h2 class="text-3xl font-bold text-center text-secondary mb-8">Mes projets</h2>
+    <app-gallery [images]="galleryImages()" title="Mes Projets en Images">
+    </app-gallery>
+</section>

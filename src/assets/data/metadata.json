@@ -1,0 +1,123 @@
+{
+  "skills": [
+    {
+      "id": 1,
+      "title": "Frontend",
+      "backgroundColor": "#e85d04",
+      "items": [
+        { "name": "HTML", "level": 80 },
+        { "name": "CSS", "level": 75 },
+        { "name": "TYPESCRIPT", "level": 90 },
+        { "name": "ANGULAR", "level": 85 },
+        { "name": "FLUTTER", "level": 70 }
+      ]
+    },
+    {
+      "id": 2,
+      "backgroundColor": "#003049",
+      "title": "Backend",
+      "items": [
+        { "name": "JAVA", "level": 85 },
+        { "name": "JAVASCRIPT", "level": 80 },
+        { "name": "NODEJS", "level": 90 },
+        { "name": "SPRING BOOT", "level": 75 },
+        { "name": "XANO", "level": 75 }
+      ]
+    },
+    {
+      "id": 3,
+      "backgroundColor": "#1b998b",
+      "title": "Databases",
+      "items": [
+        { "name": "POSTGRESQL", "level": 80 },
+        { "name": "SQL SERVER", "level": 75 },
+        { "name": "MYSQL", "level": 90 },
+        { "name": "ORACLE", "level": 90 },
+        { "name": "MONGODB", "level": 70 }
+      ]
+    },
+    {
+      "id": 4,
+      "backgroundColor": "#4ba3c3",
+      "title": "Tools & Platforms",
+      "items": [
+        { "name": "GIT", "level": 85 },
+        { "name": "POSTMAN", "level": 75 },
+        { "name": "DOCKER", "level": 90 },
+        { "name": "JENKINS", "level": 75 },
+        { "name": "AZURE", "level": 80 }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "id": 1,
+      "position": "Développeur Full Stack",
+      "company": "Capgemini",
+      "duration": "Avril 2023 - Présent",
+      "description": "Développement d'applications web pour le client SNCF pour la gestion de  capteurs IOT et le traitement des données qu'ils remontent sur l'ensemble de son périmètre"
+    },
+    {
+      "id": 2,
+      "position": "Alternant Développeur Full Stack",
+      "company": "Capgemini",
+      "duration": "Mars 2022 - Avril 2023",
+      "description": "Projet de recherche de mise en place d'un nouveau système d'interfaçage cerveau machine plus performant ayant pour objectifs de développer de nouveaux usages."
+    },
+    {
+      "id": 3,
+      "position": "Stagiaire Développeur d'Application Flutter / Spring boot",
+      "company": "Dorkenoo Consulting",
+      "duration": "Juin 2019 - Septembre 2019",
+      "description": "Stage de fin de formation pour l' obtention du diplôme d'ingénieur des Travaux Informatiques.Thème : Mise en place d'une plateforme de consultation médicale à distance."
+    },
+    {
+      "id": 4,
+      "position": "Stagiaire Développeur JEE/ JSP",
+      "company": "Dorkenoo Consulting",
+      "duration": "Juin 2018 - Août 2018",
+      "description": "Stage de deuxième année de l' Institut Africain d'Informatique représentation du Togo (IAI-TOGO)."
+    }
+  ],
+  "certifications": [
+    {
+      "id": 1,
+      "image": "assets/images/az-204.png",
+      "title": "AZURE DEVELOPER ASSOCIATE",
+
+      "issuer": "MICROSOFT",
+      "link": "https://learn.microsoft.com/api/credentials/share/fr-fr/davonjunioryao/FD780A7E3DE7406A?sharingId=4256CC52539A885"
+    },
+    {
+      "id": 2,
+      "image": "assets/images/ai-900.png",
+      "title": "AZURE AI FUNDAMENTALS",
+      "issuer": "MICROSOFT",
+      "link": "https://learn.microsoft.com/api/credentials/share/fr-fr/davonjunioryao/90AFD17E5355F57C?sharingId=4256CC52539A885"
+    },
+
+    {
+      "id": 3,
+      "image": "assets/images/github-copilot.png",
+      "title": "GITHUB COPILOT",
+      "issuer": "GITHUB",
+      "link": "https://www.credly.com/badges/18301125-1cdf-4e56-b440-14726f2b6fd2/public_url"
+    }
+  ],
+  "images": [
+    {
+      "id": 4,
+      "src": "assets/images/gallery/project2.jpg",
+      "alt": "",
+      "title": "Me at vivatech",
+      "category": "Evenements"
+    },
+    {
+      "id": 5,
+      "src": "assets/images/gallery/project1.jpg",
+      "alt": "Interface UI/UX",
+      "title": "Me at vivatech",
+      "category": "Evenements"
+    }
+  ]
+}

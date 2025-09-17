@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+@use "tailwindcss";
+
+:root{
+    --primary-color: #d90429;
+    --secondary-color: #003049;
+    --body-background-color: #edf2f4;
+    --button-font-size: 16px;
+    --button-width: 250px;
+}
+
+body{
+    background-color: var(--body-background-color);
+}
+
+/* Classes personnalisées pour les couleurs */
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+.bg-primary {
+    background-color: var(--primary-color);
+}
+
+.hover\:bg-primary:hover {
+    background-color: var(--primary-color);
+}
+
+/* Classes personnalisées pour le bouton */
+.btn {
+    font-size: var(--button-font-size);
+    width: var(--button-width);
+    font-weight: bold;
+}
